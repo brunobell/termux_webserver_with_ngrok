@@ -2,7 +2,7 @@
 
 # device arch
 DEVICE_ARCH=$(uname -m)
-echo $DEVICE_ARCH
+# echo $DEVICE_ARCH
 
 # which country
 COUNTRY=$(curl -s "http://api.ipaddress.com/iptocountry?format=txt")
