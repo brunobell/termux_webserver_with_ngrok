@@ -66,7 +66,7 @@ case $OPTION in
         apt install -y nginx && nohup nginx 1>/dev/null 2>&1 &
     ;;
     c | C)
-        nohup python -m http.server 8080 1>/dev/null 2>&1 &
+        apt install -y python && nohup python -m http.server 8080 1>/dev/null 2>&1 &
     ;;
     *)
         break
