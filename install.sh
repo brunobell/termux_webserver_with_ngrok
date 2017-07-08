@@ -21,7 +21,7 @@ then
     apt update && echo "update cache success"
 fi
 
-if [ ! -f /data/data/com.termux/files/home/ngrok]
+if [ ! -f /data/data/com.termux/files/home/ngrok ]
 then
     case $DEVICE_ARCH in
         arm | aarch64)
@@ -38,7 +38,6 @@ then
             exit 1
         ;;
     esac
-
     echo "ngrok download url: "$NGROK_URL
     curl -o /data/data/com.termux/files/home/ngrok.zip $NGROK_URL
     unzip /data/data/com.termux/files/home/ngrok.zip
